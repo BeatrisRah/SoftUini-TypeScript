@@ -69,3 +69,11 @@ function unknownResponse(obj:unknown): string{
     }
     return '-'
 }
+
+function isNotEmptyStringArr(arg: unknown): arg is string[]{
+    return Array.isArray(arg) && arg.length >= 1 && arg.every(el => typeof el === 'string');
+}
+
+// let i: unknown = ['test', 'hi'] 
+
+// console.log(isNotEmptyStringArr(i));

@@ -48,5 +48,16 @@ function reversedDayoftheWeek(daysName) {
     })(DaysOfTheWeek || (DaysOfTheWeek = {}));
     console.log(DaysOfTheWeek[daysName]);
 }
-reversedDayoftheWeek('Monday');
+// reversedDayoftheWeek('Monday')
+function unknownResponse(obj) {
+    if ('value' in obj && typeof obj.value === 'string') {
+        return obj.value;
+    }
+    return '-';
+}
+function isNotEmptyStringArr(arg) {
+    return Array.isArray(arg) && arg.length >= 1 && arg.every(el => typeof el === 'string');
+}
+let i = ['test', 'hi'];
+console.log(isNotEmptyStringArr(i));
 //# sourceMappingURL=intruduction.js.map
