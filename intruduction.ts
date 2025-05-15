@@ -61,4 +61,11 @@ function reversedDayoftheWeek(daysName: string): void{
     console.log(DaysOfTheWeek[daysName as keyof typeof DaysOfTheWeek]);
 
 }
-reversedDayoftheWeek('Monday')
+// reversedDayoftheWeek('Monday')
+
+function unknownResponse(obj:unknown): string{
+    if('value' in (obj as any) && typeof (obj as any).value === 'string'){
+        return (obj as any).value
+    }
+    return '-'
+}
