@@ -24,5 +24,15 @@ function convertArrays(string) {
     const concat = string.join('');
     return ([concat, concat.length]);
 }
-console.log(convertArrays(['Today', ' is', ' a ', 'nice', ' ', 'day for ', 'TypeScript']));
+// console.log(convertArrays(['Today', ' is', ' a ', 'nice', ' ', 'day for ', 'TypeScript']));
+function summarizePerson(id, firstName, lastName, age, middleName, hobbies, workInfo) {
+    return [
+        id,
+        `${firstName} ${middleName ? middleName + ' ' + lastName : lastName}`,
+        age,
+        `${hobbies ? hobbies.join(', ') : '-'}`,
+        workInfo ? `${workInfo[0]} -> ${workInfo[1]}` : '-'
+    ];
+}
+console.log(summarizePerson(20, 'Mary', 'Trent', 25, undefined, ['fitness', 'rowing']));
 //# sourceMappingURL=intruduction.js.map
