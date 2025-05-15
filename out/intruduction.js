@@ -19,5 +19,10 @@ function dayOfTheWeek(n) {
 function formatPerson(personData) {
     return `Hello, my name ${personData[0]} and my age is ${personData[1]}`;
 }
-console.log(formatPerson(['Ivan', 20]));
+// console.log(formatPerson(['Ivan', 20]));
+function convertArrays(string) {
+    const concat = string.join('');
+    return ([concat, concat.length]);
+}
+console.log(convertArrays(['Today', ' is', ' a ', 'nice', ' ', 'day for ', 'TypeScript']));
 //# sourceMappingURL=intruduction.js.map
