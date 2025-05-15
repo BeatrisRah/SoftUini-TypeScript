@@ -45,5 +45,20 @@ function summarizePerson(
             workInfo ? `${workInfo[0]} -> ${workInfo[1]}` : '-']
 }
 
-console.log(summarizePerson(20, 'Mary', 'Trent', 25, undefined, ['fitness', 'rowing']));
+// console.log(summarizePerson(20, 'Mary', 'Trent', 25, undefined, ['fitness', 'rowing']));
 
+function reversedDayoftheWeek(daysName: string): void{
+    enum DaysOfTheWeek {
+        Monday = 1,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
+        Sunday
+    }
+
+    console.log(DaysOfTheWeek[daysName as keyof typeof DaysOfTheWeek]);
+
+}
+reversedDayoftheWeek('Monday')

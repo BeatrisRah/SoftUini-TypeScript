@@ -34,5 +34,19 @@ function summarizePerson(id, firstName, lastName, age, middleName, hobbies, work
         workInfo ? `${workInfo[0]} -> ${workInfo[1]}` : '-'
     ];
 }
-console.log(summarizePerson(20, 'Mary', 'Trent', 25, undefined, ['fitness', 'rowing']));
+// console.log(summarizePerson(20, 'Mary', 'Trent', 25, undefined, ['fitness', 'rowing']));
+function reversedDayoftheWeek(daysName) {
+    let DaysOfTheWeek;
+    (function (DaysOfTheWeek) {
+        DaysOfTheWeek[DaysOfTheWeek["Monday"] = 1] = "Monday";
+        DaysOfTheWeek[DaysOfTheWeek["Tuesday"] = 2] = "Tuesday";
+        DaysOfTheWeek[DaysOfTheWeek["Wednesday"] = 3] = "Wednesday";
+        DaysOfTheWeek[DaysOfTheWeek["Thursday"] = 4] = "Thursday";
+        DaysOfTheWeek[DaysOfTheWeek["Friday"] = 5] = "Friday";
+        DaysOfTheWeek[DaysOfTheWeek["Saturday"] = 6] = "Saturday";
+        DaysOfTheWeek[DaysOfTheWeek["Sunday"] = 7] = "Sunday";
+    })(DaysOfTheWeek || (DaysOfTheWeek = {}));
+    console.log(DaysOfTheWeek[daysName]);
+}
+reversedDayoftheWeek('Monday');
 //# sourceMappingURL=intruduction.js.map
