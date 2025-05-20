@@ -28,7 +28,19 @@ function operator(...args: operatorParam): number | string{
     return Number((args[0] as number)) + args[2]
 }
 
-console.log(operator('7', 'Add', 3 ));
+// console.log(operator('7', 'Add', 3 ));
+type carBody = {material: string, state:string}
+type tires = {airPressure: number, condition:string}
+type engine = {horsepower:number, oilDensity: number}
+
+type carDiagnosticsParams = [
+    carBody, tires, engine
+]
+
+
+function carDiagnostics(...args: carDiagnosticsParams){
+
+}
 
 
 
