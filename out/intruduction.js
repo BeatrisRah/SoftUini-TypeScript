@@ -58,6 +58,6 @@ function unknownResponse(obj) {
 function isNotEmptyStringArr(arg) {
     return Array.isArray(arg) && arg.length >= 1 && arg.every(el => typeof el === 'string');
 }
-let i = ['test', 'hi'];
-console.log(isNotEmptyStringArr(i));
+// let i: unknown = ['test', 'hi'] 
+// console.log(isNotEmptyStringArr(i));
 //# sourceMappingURL=intruduction.js.map
