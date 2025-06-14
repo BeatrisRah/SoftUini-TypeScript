@@ -4,7 +4,7 @@ import { Cipher } from "../cipher.js";
 import { MessageEncoder } from "../messageEncoder.js";
 
 
-@decorator4
+// @decorator4
 export abstract class PartialMessageEncoder implements MessageEncoder {
      protected _language: unknown;
      protected _cipher: unknown;

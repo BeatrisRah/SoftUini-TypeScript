@@ -4,6 +4,7 @@ import { Language } from "./contracts/language.js";
 import { LanguageMessageEncoder } from "./languageMessageEncoder.js";
 import { LowercaseCharactersOnlyLanguage } from "./contracts/implemented/lowercaseCharactersOnlyLanguage.js";
 import { PartialMessageEncoder } from "./contracts/implemented/partialMessageEncoder.js";
+import { DNACodeLanguage } from "./dnaCodeLangueage.js";
 
 // Example 1
 
@@ -79,8 +80,8 @@ import { PartialMessageEncoder } from "./contracts/implemented/partialMessageEnc
 
 // Example 5
 
-// let dnaCharsLanguage = new DNACodeLanguage();
-// dnaCharsLanguage.charset.add('B');
+let dnaCharsLanguage = new DNACodeLanguage();
+dnaCharsLanguage.charset.add('B');
 
 
 
